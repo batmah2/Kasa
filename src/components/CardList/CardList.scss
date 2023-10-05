@@ -1,0 +1,34 @@
+.cardList {
+    margin: 43px 100px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 56px 50px 43px;
+    border-radius: 20px;
+    background-color: #f6f6f6;
+    .card {
+        width: 340px;
+        height: 340px;
+        border-radius: 20px;
+        position: relative;   
+        background: linear-gradient(#FFFFFF 0%, #000000 75%);  
+        z-index: 0;
+        img{
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            position: relative; 
+            background: linear-gradient(#FFFFFF 50%, #000000 50%);    
+            z-index: -1;             
+        }
+        p {
+            text-decoration: none;
+            position: absolute;
+            bottom: 10px;
+            left: 20px;
+            color: white; 
+            font-family: 'Montserrat', sans-serif;
+        }
+    }
+}

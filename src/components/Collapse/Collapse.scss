@@ -1,0 +1,62 @@
+.collapseContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 200px
+}
+.collapse{
+    margin: 5px;
+}
+
+.collapseTitle{
+    background-color: #FF6060;    
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    padding: 15px 20px 15px 20px;
+}
+.collapseButton{
+    position: relative;
+    width: 24px;
+    height: 13.71px;
+    margin-right: 10px;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+.collapseButton::before {
+    position: absolute;
+    transform: rotate(90deg);
+}
+    
+.rotate {
+    transform: rotate(-180deg);
+}
+.collapseContent{
+    color: #FF6060;
+    background-color: #f6f6f6;
+    font-family: 'Montserrat', sans-serif;
+    transition: all 0.6s ease-in-out;
+    transform: translateY(-40px);
+    opacity: 0;
+    height: 0;
+    border-radius: 5px;
+    font-size: 18px;    
+    visibility: hidden;
+    padding: 15px 20px 15px 20px;
+    overflow: hidden;
+}
+.collapseActived{
+    opacity: 1;
+    height: 100%;     
+    transform: translateY(0px);
+    visibility: visible;
+    z-index: -1;
+    overflow: visible;
+}
+.fall {
+    height: fit-content;
+}
+
