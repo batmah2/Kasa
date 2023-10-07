@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { useState } from 'react';
 import CollapseBtn from '../../assets/COLLAPSE-Btn.png'
 

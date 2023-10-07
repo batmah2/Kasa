@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import fullStar from '../../assets/FilledStar.png'
 import emptyStar from '../../assets/EmptyStar.png'
 
