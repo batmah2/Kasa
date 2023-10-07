@@ -1,0 +1,76 @@
+.collapseHousing {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 100px 50px;
+    gap: 85px;   
+}
+
+.housingContent {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 100px 24px;  
+}
+
+.housingLocation{
+    font-family: 'Montserrat', sans-serif;
+    h1{
+        font-size: 36px;
+        font-weight: 500;
+        color: #FF6060;
+        margin: 5px 0px 5px 0px;
+    }
+    p{
+        color: #FF6060;
+        font-size: 16px;
+        margin-top: 0;
+    }
+    .housingTags {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 20px;
+    }
+    .tags {
+        color: white;
+        background-color: #FF6060;
+        border-radius: 20px;
+        padding: 5px 40px;
+    }
+}
+
+.housingHost {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+
+    .hostPicture {
+        border-radius: 50%;
+        object-fit: cover;
+        width: 64px;
+        height: 64px;
+    }
+    .hostName {
+        color: #FF6060;
+        margin-right: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+}
+.starContainer {
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    bottom: 10px;
+    .star {
+        width: 24px;
+        height: 24px;
+    }  
+    img {
+        width: 100%;
+        height: 100%;
+    }
+} 

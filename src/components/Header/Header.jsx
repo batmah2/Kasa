@@ -6,8 +6,8 @@ export default function Header() {
         <div className='navbar'>
             <img src={Logo} alt="logo kasa"/>
             <ul className='navbar_button'>
-                <NavLink className="navLink" activeClassName="active" to="/">Acceuil</NavLink>
-                <NavLink className="navLink" activeClassName="active" to="/a-propos">A propos</NavLink>
+                <NavLink className="navLink" to="/">Acceuil</NavLink>
+                <NavLink className="navLink" to="/a-propos">A propos</NavLink>
             </ul>
         </div>
     )
