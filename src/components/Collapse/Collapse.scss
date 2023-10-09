@@ -3,9 +3,15 @@
     flex-direction: column;
     justify-content: center;
     margin: 0px 200px 20px;
+    @media screen and (max-width: 768px){
+        margin: 16px;
+    }
 }
 .collapse{
     margin: 5px;
+    @media screen and (max-width: 768px){
+        margin: 0;
+    }
 }
 
 .collapseTitle{
@@ -20,6 +26,9 @@
     padding: 15px 20px 15px 20px;
     position: relative;
     z-index: 2;
+    @media screen and (max-width: 768px) {
+        font-size: 13px;
+    }
 }
 .collapseButton{
     position: relative;
@@ -47,7 +56,7 @@
     height: 0;
     border-radius: 5px;
     font-size: 18px;    
-    padding: 15px 20px 15px 20px;    
+    padding: 15px 5px 15px 5px;    
     ul {
         padding: 0;
     }
@@ -55,12 +64,16 @@
         list-style-type: none;
         margin-top: 5px;
     }
+    @media screen and (max-width: 768px){
+        font-size: 13px;
+    }
 }
 .collapseActive{
     opacity: 1;
     height: 80%;    
     transition: all 0.5s ease-in-out; 
     transform: translateY(0px);
+    margin-bottom: 20px;
     ul {
         padding: 0;
     }
@@ -75,4 +88,7 @@
 
 .collapseHousingCustom {
     width: 50%;
+    @media screen and (max-width: 768px){
+        width: 100%;
+    }
 }

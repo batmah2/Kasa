@@ -6,9 +6,19 @@
     padding: 40px 0px 20px 0px;
     height: 209px;
     justify-content: center;
+    img{
+        @media screen and (max-width: 768px){
+            height: 40px;
+        }
+    }
     p {
         color: white;
         font-family: 'Montserrat', sans-serif;
         font-size: 24px;
+        @media screen and (max-width: 768px){
+            text-align: center;   
+            font-size: 12px;     
+            width: 30%;    
+        }
     }
 }

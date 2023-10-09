@@ -4,26 +4,48 @@
     justify-content: space-between;
     margin: 0 100px 50px;
     gap: 85px;   
+    @media screen and (max-width: 768px){
+        margin: 20px;
+        flex-direction: column;
+        gap: 0;
+    }
 }
 
 .housingContent {
     display: flex;
     justify-content: space-between;
     margin: 0 100px 24px;  
+    @media screen and (max-width: 768px){
+        margin: 20px;
+        flex-direction: column;
+                
+    }
 }
 
 .housingLocation{
     font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    @media screen and (max-width: 768px){
+        text-align: start;
+        padding: 0;
+    }
     h1{
         font-size: 36px;
         font-weight: 500;
         color: #FF6060;
         margin: 5px 0px 5px 0px;
+        @media screen and (max-width: 768px){
+            font-size: 18px;
+        }
     }
     p{
         color: #FF6060;
         font-size: 16px;
         margin-top: 0;
+        @media screen and (max-width: 768px){
+            font-size: 16px;
+        }
     }
     .housingTags {
         display: flex;
@@ -37,6 +59,10 @@
         background-color: #FF6060;
         border-radius: 20px;
         padding: 5px 40px;
+        @media screen and (max-width: 768px){
+            font-size: 13px;
+            padding: 5px 20px;
+        }
     }
 }
 
@@ -45,12 +71,18 @@
     display: flex;
     flex-direction: row-reverse;
     position: relative;
-
+    @media screen and (max-width: 768px){
+        align-items: center;
+    }
     .hostPicture {
         border-radius: 50%;
         object-fit: cover;
         width: 64px;
         height: 64px;
+        @media screen and (max-width: 768px){
+            height: 32px;
+            width: 32px;
+        }
     }
     .hostName {
         color: #FF6060;
@@ -58,6 +90,9 @@
         display: flex;
         flex-direction: column;
         align-items: flex-end;
+        @media screen and (max-width: 768px){
+            font-size: 12px;
+        }
     }
 }
 .starContainer {
@@ -65,9 +100,16 @@
     gap: 10px;
     position: absolute;
     bottom: 10px;
+    @media screen and (max-width: 768px){
+        left: 0;
+    }
     .star {
         width: 24px;
         height: 24px;
+        @media screen and (max-width: 768px){
+            width: 13px;
+            height: 13px;
+        }
     }  
     img {
         width: 100%;
