@@ -29,12 +29,13 @@ export default function Slider({ pictures }) {
     <div className="slider">
       <div className='imageContainer'>
         <img className='accomodation' src={pictures[currentPictureIndex]} alt={`accomodation ${currentPictureIndex + 1}`} />
-        <span className="imageCounter">{`${currentImageNumber}/${totalImages}`}</span>
+        { totalImages > 1 && <span className="imageCounter">{`${currentImageNumber}/${totalImages}`}</span> }
       </div>
-      <div className='sliderButton'>
+      { totalImages > 1  && <div className='sliderButton'>
         <img src={arrowLeft} alt="Previous" onClick={goToPreviousPicture} className="sliderBtn prev"/>
         <img src={arrowRight} alt="Next"  onClick={goToNextPicture} className="sliderBtn next"/>
-      </div>        
+      </div>
+      }
     </div>
   );
 }
