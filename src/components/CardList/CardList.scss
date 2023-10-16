@@ -4,7 +4,7 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 50px;
-    padding: 56px 50px 43px;
+    padding: 56px 30px 43px;
     border-radius: 20px;
     background-color: #f6f6f6;
     @media screen and (max-width: 768px){
@@ -16,7 +16,7 @@
         flex-direction: row;
     }
     .card {
-        width: 25%;
+        width: 340px;
         height: 340px;
         border-radius: 20px;
         position: relative;   
