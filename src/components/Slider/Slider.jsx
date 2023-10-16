@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import arrowLeft from '../../assets/Arrow-left.png';
 import arrowRight from '../../assets/Arrow-right.png';
 
@@ -15,6 +15,15 @@ export default function Slider({ pictures }) {
 
   const currentImageNumber = currentPictureIndex + 1;
   const totalImages = pictures.length;
+  if (totalImages === 1) {
+    return (
+      <div className="slider">
+        <div className='imageContainer'>
+          <img className='accomodation' src={pictures[0]} alt="accommodation 1" />
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="slider">
@@ -29,4 +38,3 @@ export default function Slider({ pictures }) {
     </div>
   );
 }
-
